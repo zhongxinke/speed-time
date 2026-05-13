@@ -1,0 +1,70 @@
+#video-effective-time-root {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2147483647;
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  pointer-events: none;
+}
+
+#video-effective-time-root .video-effective-time-card {
+  min-width: 188px;
+  padding: 12px 14px;
+  border: 1px solid rgba(10, 37, 64, 0.18);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(241, 247, 255, 0.94));
+  color: #10243e;
+  box-shadow: 0 12px 30px rgba(16, 36, 62, 0.16);
+  backdrop-filter: blur(10px);
+  opacity: 0.8;
+  transform: translateY(8px);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+#video-effective-time-root.video-effective-time-active .video-effective-time-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#video-effective-time-root .video-effective-time-title {
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #47617f;
+}
+
+#video-effective-time-root .video-effective-time-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+#video-effective-time-root .video-effective-time-row strong {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0d3b66;
+}
+
+#video-effective-time-root .video-effective-time-hint {
+  margin-top: 9px;
+  font-size: 11px;
+  color: #5d7795;
+}
+
+@media (max-width: 640px) {
+  #video-effective-time-root {
+    right: 10px;
+    bottom: 10px;
+  }
+
+  #video-effective-time-root .video-effective-time-card {
+    min-width: 168px;
+    padding: 10px 12px;
+  }
+}
+
